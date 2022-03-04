@@ -5,38 +5,16 @@ import java.util.regex.Pattern;
 public class TimeAndTimeAgain {
 
 	public static void main(String[] args) {
-		try (Scanner input = new Scanner(System.in)) {
-			int testCases = Integer.parseInt(input.nextLine());
+		System.out.println("Hello World");
 
-			Pattern secondRegex = Pattern.compile(".*?(\\d+)s.*");
-			Pattern minuteRegex = Pattern.compile(".*?(\\d+)m.*");
-			Pattern hourRegex = Pattern.compile(".*?(\\d+)h.*");
+		// Format needed HH:MM:SS
+		// Read in input
+		// First number is the number of items
 
-			for (int testcase = 0; testcase < testCases; testcase++) {
-				String data = input.nextLine();
+		// Loop through content
 
-				int sec = 0;
-				int min = 0;
-				int hour = 0;
 
-				Matcher matcher = secondRegex.matcher(data);
-				if (matcher.matches()) {
-					sec = Integer.parseInt(matcher.group(1));
-				}
-				matcher = minuteRegex.matcher(data);
-				if (matcher.matches()) {
-					min = Integer.parseInt(matcher.group(1));
-				}
-				matcher = hourRegex.matcher(data);
-				if (matcher.matches()) {
-					hour = Integer.parseInt(matcher.group(1));
-				}
-
-				String output = String.format("%02d:%02d:%02d", Integer.valueOf(hour), Integer.valueOf(min),
-						Integer.valueOf(sec));
-				
-				System.out.println(output);
-			}
+		// Print out the numbers in appropriate format
 		}
 	}
 
